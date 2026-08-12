@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>annu catch game</title>
+	<style>
+		body{
+
+			text-align: center;
+			font-family: arial;
+			background: lightblue;
+
+		}
+		#game{
+
+			widht:350px;
+			height: 400px;
+			margin: auto;
+			background: white;
+			border: 3px solid black;
+
+			position:relative;
+
+		}
+
+		#button{
+			position: absolute;
+			background: red;
+			color: white;
+			border: none;
+			padding: 12px;
+			border-radius: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<h1> annu catch game</h1>
+	<h2>score:<span id="scpre">0</span></h2>
+	<div id="game">
+		<button id="button"onclic="catch button()">
+			click me!
+		</button>
+	</div>
+	<script>
+		
+let score=0;
+function cationbutton()
+{
+
+	score++;
+document.getElementByid("score").innertext=score;
+let button=document,getElementByid("button");
+let X=math.random()*280;
+let Y=math.random()*330;
+button.style.left=X +"px";
+button.style.top=Y + "px";
+}
+
+	</script>
+</body>
+</html>
